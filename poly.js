@@ -3,11 +3,29 @@
 	new JS functions in IE8 and older browsers
 *****************************************************/
 
+// Console-polyfill. MIT license.
+// https://github.com/paulmillr/console-polyfill
+// Make it safe to do console.log() always.
+(function(con) {
+  'use strict';
+  var prop, method;
+  var empty = {};
+  var dummy = function() {};
+  var properties = 'memory'.split(',');
+  var methods = ('assert,clear,count,debug,dir,dirxml,error,exception,group,' +
+     'groupCollapsed,groupEnd,info,log,markTimeline,profile,profiles,profileEnd,' +
+     'show,table,time,timeEnd,timeline,timelineEnd,timeStamp,trace,warn').split(',');
+  while (prop = properties.pop()) con[prop] = con[prop] || empty;
+  while (method = methods.pop()) con[method] = con[method] || dummy;
+})(this.console = this.console || {}); // Using `this` for web workers.
+
 /*****************************************************
 	Array polyfill-s
 	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 *****************************************************/
 (function () {
+
+
 
 	/* Production steps of ECMA-262, Edition 5, 15.4.4.18
 	* Reference: http://es5.github.io/#x15.4.4.18

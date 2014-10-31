@@ -12,7 +12,9 @@ Download poly.js.min and include it only in case that you need it.
     
 Enjoy using new cool JavaScript array methods!
 
-Pollifil are supplied for following methods:
+Suplied Polyfills
+
+Array polyfills
   - forEach : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
   - indexOf : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
   - lastIndexOf : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf
@@ -23,4 +25,7 @@ Pollifil are supplied for following methods:
   - reduce : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
   - reduceRight : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight
   - some : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+
+Other
+  - Console (e.g console.log) : https://github.com/paulmillr/console-polyfill
 
