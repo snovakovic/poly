@@ -28,4 +28,5 @@ Array polyfills
 
 Other
   - Console (e.g console.log) : https://github.com/paulmillr/console-polyfill
+  - window.MatchMedia polyfill for IE9 and below: https://github.com/paulirish/matchMedia.js/blob/master/matchMedia.js
 
